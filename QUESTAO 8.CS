@@ -1,28 +1,45 @@
-string[] maior = Console.ReadLine().Split(' ');
-int n1 = int.Parse(maior[0]);
-int n2 = int.Parse(maior[1]);
-int n3 = int.Parse(maior[2]);
+using System;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Digite três números separados por espaço: ");
+        string[] numeros = Console.ReadLine().Split(' ');
 
-int m ;
-int n ;
-if (n1 > n2 && n1 > n3) {
-m = n1;
-}
-else if (n2 > n3) {
-m = n2;
-}
-else {
-m = n3;
-}
-if (n1 < n2 && n1 < n3) {
-n = n1;
-}
-else if (n2 < n3) {
-n = n2;
-}
-else {
-n = n3;
-}
+        int n1 = int.Parse(numeros[0]);
+        int n2 = int.Parse(numeros[1]);
+        int n3 = int.Parse(numeros[2]);
 
-Console.WriteLine($"{m} e o maior e {n} é o menor");
+        int maior, menor;
+
+        if (n1 > n2 && n1 > n3)
+        {
+            maior = n1;
+        }
+        else if (n2 > n3)
+        {
+            maior = n2;
+        }
+        else
+        {
+            maior = n3;
+        }
+
+        
+        if (n1 < n2 && n1 < n3)
+        {
+            menor = n1;
+        }
+        else if (n2 < n3)
+        {
+            menor = n2;
+        }
+        else
+        {
+            menor = n3;
+        }
+
+        Console.WriteLine($"{maior} é o maior e {menor} é o menor");
+    }
+}
