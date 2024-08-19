@@ -27,5 +27,4 @@ n = n3;
 
 
 Console.WriteLine($"{m} e o maior e {n} é o menor");
- 39 changes: 39 additions & 0 deletions39  
-questao9.cs
+ 
