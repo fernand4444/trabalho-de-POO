@@ -25,6 +25,4 @@ else {
 n = n3;
 }
 
-
 Console.WriteLine($"{m} e o maior e {n} é o menor");
- 
